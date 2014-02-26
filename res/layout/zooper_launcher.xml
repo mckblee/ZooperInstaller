@@ -81,25 +81,12 @@
         				android:layout_marginLeft="@dimen/left_right_margin"
         				android:layout_marginRight="@dimen/left_right_margin"
 	            		android:layout_marginTop="@dimen/top_bottom_margin"
-	            		android:layout_marginBottom="@dimen/bottom_margin"
+	            		android:layout_marginBottom="@dimen/top_bottom_margin"
 			            android:text="@string/disclaimer"
 			            android:textSize="@dimen/list_disclaimer"
-			            android:textColor="@color/holo_red" />
+			            android:textColor="@color/holo_red" 
+			            />
 
-<!-- This is kind of cheating, addind extra space at the bottom so that the user can scroll a decent
-amount and it also keeps the layout from staying behind the navbar when it is translucent. -->	
-            		<TextView
-	            		android:id="@+id/blank1"
-	            		android:layout_width="match_parent"
-	            		android:layout_height="wrap_content"
-        				android:layout_marginLeft="@dimen/left_right_margin"
-        				android:layout_marginRight="@dimen/left_right_margin"
-	            		android:layout_marginTop="@dimen/top_bottom_margin"
-	            		android:layout_marginBottom="@dimen/bottom_margin"
-			            android:text="@string/blank"
-			            android:textSize="2sp"
-			            android:textColor="@color/white" 
-			            android:fitsSystemWindows = "true"/>
 </LinearLayout>
 </ScrollView>
 

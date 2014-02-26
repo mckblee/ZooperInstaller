@@ -51,6 +51,7 @@
     	android:layout_height="wrap_content"
     	android:layout_alignParentBottom="true"
     	android:background="@color/holo_white"
+
  >
         
    	<Button 
@@ -65,7 +66,8 @@
 	    android:text="@string/button_applywallpaper"
 	    android:textColor="@color/holo_grey"
 	    android:textSize="@dimen/list_desc_text"
-	    android:background="@drawable/buttondraw" />
+	    android:background="@drawable/buttondraw"
+/>
 
 
     

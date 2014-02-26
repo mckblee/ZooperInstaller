@@ -35,7 +35,7 @@ then we'll have to include the ActionBarSherlock library as well. -->
             android:icon="@drawable/icon"
             android:label="@string/wallpapers"
             android:logo="@drawable/iconlogo"
-            android:theme="@style/AppTheme"
+            android:theme="@style/AppTheme2"
 >
             <intent-filter>
                 <action android:name="android.intent.action.SET_WALLPAPER" />
