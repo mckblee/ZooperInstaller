@@ -32,16 +32,17 @@ public final class R {
     public static final class dimen {
         /**  Height of the image banner 
          */
-        public static final int banner_height=0x7f050006;
+        public static final int banner_height=0x7f050007;
         public static final int bottom_margin=0x7f050002;
+        public static final int button_top_bottom_margin=0x7f050003;
         /**  Margin for text/layouts from left and right of screen. 
          */
         public static final int left_right_margin=0x7f050000;
-        public static final int list_desc_text=0x7f050004;
-        public static final int list_disclaimer=0x7f050005;
+        public static final int list_desc_text=0x7f050005;
+        public static final int list_disclaimer=0x7f050006;
         /**  Text Sizes 
          */
-        public static final int list_title_text=0x7f050003;
+        public static final int list_title_text=0x7f050004;
         /**  Top and Bottom margins for text/layouts. 
          */
         public static final int top_bottom_margin=0x7f050001;

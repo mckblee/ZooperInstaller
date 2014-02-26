@@ -8,6 +8,7 @@
 <!-- Top and Bottom margins for text/layouts. -->
     <dimen name="top_bottom_margin">24dp</dimen>
     <dimen name="bottom_margin">3dp</dimen>
+    <dimen name="button_top_bottom_margin">12dp</dimen>
     
 <!-- Text Sizes -->
     <dimen name="list_title_text">22sp</dimen>

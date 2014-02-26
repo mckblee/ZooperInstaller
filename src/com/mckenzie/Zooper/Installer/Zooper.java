@@ -49,34 +49,34 @@ public class Zooper extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+	
+	// Removes ActionBar title at launch. Delete this line to get it back.
 		this.setTitle(getResources().getString(R.string.blank));
-
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setHomeButtonEnabled(true);
 		
-		
-		
+	// FadingActionBar calls the header and main layouts, and sets the AB background.	
         FadingActionBarHelper helper = new FadingActionBarHelper()
         .actionBarBackground(R.drawable.ab_solid_actionbar)
         .headerLayout(R.layout.zooper_launcher_header)
         .contentLayout(R.layout.zooper_launcher);
-    setContentView(helper.createView(this));
-    helper.initActionBar(this);
+        setContentView(helper.createView(this));
+        helper.initActionBar(this);
     
 	context = this;
 
-
+	//Sets the fonts for the activity. There's gotta be a better way to do this...
 	    TextView tv3=(TextView)findViewById(R.id.ZooperDescription); 
 	    Typeface face2=Typeface.createFromAsset(getAssets(), "themefontlight.ttf");
 	    tv3.setTypeface(face2);
 	    TextView tv4=(TextView)findViewById(R.id.ZooperDescriptionTitle); 
 	    tv3.setTypeface(face2);
 	    
+	// Buttons!     
 		findViewById(R.id.buttonInstallWidget).setOnClickListener(
 				new OnClickListener() {
 
 					@Override
 					public void onClick(View v) {
+						//Calls the Installable Skins method.
 						showInstallableSkins();
 					}
 
@@ -89,6 +89,7 @@ public class Zooper extends Activity {
 
 					@Override
 					public void onClick(View v) {
+						// Opens the wallpaper activity.
 					    Intent intent = new Intent(com.mckenzie.Zooper.Installer.Zooper.this, com.mckenzie.Zooper.Installer.Wallpaper.class);
 					    startActivity(intent);
 					}
@@ -98,6 +99,7 @@ public class Zooper extends Activity {
 	}
 	
 	@Override
+	// This is the ActionBar Menu
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu) ;
@@ -112,23 +114,21 @@ public class Zooper extends Activity {
         case R.id.action_share:
         	Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND); 
             sharingIntent.setType("text/plain");
-
-            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "iNex Icons - Full");
-            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "http://bit.ly/13GI2SG");
-            startActivity(Intent.createChooser(sharingIntent, "Share iNex..."));
+            // Don't forget to set this to YOUR app's info.
+            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "My Zooper Widget");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "http://www.URL.com");
+            startActivity(Intent.createChooser(sharingIntent, "Share Widget..."));
             Toast.makeText(this, "You are totally awesome. Thank you!", Toast.LENGTH_SHORT).show();
             return true;
             
         case R.id.action_rate:
-   		 Uri uri = Uri.parse("market://details?id=com.mckenzie.iNex.Pro");
-   		 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-   		 startActivity(intent);
+        	// Again, set to YOUR app's market info
+   		 	Uri uri = Uri.parse("market://URL.com");
+   		 	Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+   		 	startActivity(intent);
             return true;
 	            
-	        
-    	   
-
-	        
+            // Default stuff.
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
@@ -137,7 +137,7 @@ public class Zooper extends Activity {
 	
 	
 	
-
+	// This installs the apk. Change ONE LINE BELOW.
 	private class RepairSkinAsyncTask extends AsyncTask<Void, Void, Void> {
 
 		private ProgressDialog mDialog;
@@ -150,7 +150,10 @@ public class Zooper extends Activity {
 		@Override
 		protected Void doInBackground(Void... nothing) {
 			String SDCARD_MYAPK_APK = Environment.getExternalStorageDirectory()
-					.getPath() + File.separator + "faint.apk";
+			
+			// Change to your apk file that is located in your assets folder.
+			// LEAVE EVERYTHING ELSE ALONE IF YOU WANT TO LIVE
+			.getPath() + File.separator + "faint.apk";
 			deleteOldSkin(SDCARD_MYAPK_APK);
 			saveSkinToSdCard(SDCARD_MYAPK_APK);
 			startAppInstaller(SDCARD_MYAPK_APK);
