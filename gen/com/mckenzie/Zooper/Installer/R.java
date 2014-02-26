@@ -16,43 +16,35 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int black=0x7f040014;
-        public static final int black_50=0x7f040015;
-        public static final int bubble_background_color=0x7f04000d;
-        public static final int bubble_ring_color=0x7f04000b;
-        public static final int bubble_shader_color=0x7f04000e;
-        public static final int bubble_shadow_color=0x7f04000c;
-        public static final int bubble_text_color=0x7f04000a;
-        public static final int drawer_background_color=0x7f040006;
-        public static final int drawer_icon_text_color=0x7f040008;
-        public static final int drawer_tab_text_color=0x7f040007;
-        public static final int drawer_widget_size_color=0x7f040009;
-        public static final int folder_item_text_color=0x7f040003;
-        public static final int folder_title_color=0x7f040002;
-        public static final int holo_black=0x7f040012;
-        public static final int holo_grey=0x7f040011;
-        public static final int holo_red=0x7f040013;
-        public static final int holo_violet=0x7f040017;
-        public static final int holo_white=0x7f040010;
-        public static final int holo_white50=0x7f04000f;
-        public static final int homescreen_icon_text_color=0x7f040000;
-        public static final int outline_color=0x7f040001;
-        public static final int shadow_large_color=0x7f040004;
-        public static final int shadow_small_color=0x7f040005;
-        public static final int transparent=0x7f040018;
-        public static final int white=0x7f040016;
+        public static final int black=0x7f040005;
+        public static final int black_50=0x7f040006;
+        public static final int holo_black=0x7f040003;
+        public static final int holo_grey=0x7f040002;
+        public static final int holo_red=0x7f040004;
+        public static final int holo_violet=0x7f040008;
+        public static final int holo_white=0x7f040001;
+        /**  Various useful "Holo" colors. 
+         */
+        public static final int holo_white50=0x7f040000;
+        public static final int transparent=0x7f040009;
+        public static final int white=0x7f040007;
     }
     public static final class dimen {
-        public static final int about_top_desc_margin=0x7f050005;
-        public static final int about_top_title_margin=0x7f050004;
-        public static final int banner_height=0x7f050009;
-        public static final int header_text=0x7f050002;
-        public static final int left_right_margin=0x7f050001;
-        public static final int list_desc_text=0x7f050007;
-        public static final int list_disclaimer=0x7f050008;
-        public static final int list_padding=0x7f050000;
-        public static final int list_title_text=0x7f050006;
-        public static final int subheader_text=0x7f050003;
+        /**  Height of the image banner 
+         */
+        public static final int banner_height=0x7f050006;
+        public static final int bottom_margin=0x7f050002;
+        /**  Margin for text/layouts from left and right of screen. 
+         */
+        public static final int left_right_margin=0x7f050000;
+        public static final int list_desc_text=0x7f050004;
+        public static final int list_disclaimer=0x7f050005;
+        /**  Text Sizes 
+         */
+        public static final int list_title_text=0x7f050003;
+        /**  Top and Bottom margins for text/layouts. 
+         */
+        public static final int top_bottom_margin=0x7f050001;
     }
     public static final class drawable {
         public static final int ab_solid_actionbar=0x7f020000;
@@ -127,25 +119,32 @@ public final class R {
         public static final int main=0x7f0a0000;
     }
     public static final class string {
-        public static final int action_rate=0x7f06000b;
-        public static final int action_settings=0x7f06000c;
+        public static final int action_rate=0x7f060008;
+        public static final int action_settings=0x7f060009;
+        /**  Title for app that is shown in launchers. 
+         */
         public static final int app_title=0x7f060000;
-        public static final int app_title_wallpaper=0x7f060001;
-        public static final int banner_header=0x7f060002;
-        public static final int banner_subheader=0x7f060003;
-        public static final int blank=0x7f06000d;
-        public static final int button_applywallpaper=0x7f060009;
-        public static final int button_install=0x7f06000a;
-        public static final int button_wallpapers=0x7f060008;
-        public static final int description=0x7f060005;
-        public static final int descriptiontitle=0x7f060004;
-        public static final int disclaimer=0x7f060006;
-        public static final int wallpapers=0x7f060007;
-        public static final int zooper_pack_author=0x7f060010;
-        public static final int zooper_pack_desc=0x7f06000f;
+        public static final int blank=0x7f06000a;
+        public static final int button_applywallpaper=0x7f060006;
+        public static final int button_install=0x7f060007;
+        public static final int button_wallpapers=0x7f060005;
+        /**  Page descriptions. 
+         */
+        public static final int description=0x7f060003;
+        /**  Page titles. 
+         */
+        public static final int descriptiontitle=0x7f060002;
+        /**  Zooper disclaimer. 
+         */
+        public static final int disclaimer=0x7f060004;
+        /**  Title for wallpaper activity shown in launchers. 
+         */
+        public static final int wallpapers=0x7f060001;
+        public static final int zooper_pack_author=0x7f06000d;
+        public static final int zooper_pack_desc=0x7f06000c;
         /**  These info will be used in the available skins list 
          */
-        public static final int zooper_pack_name=0x7f06000e;
+        public static final int zooper_pack_name=0x7f06000b;
     }
     public static final class style {
         public static final int AppTheme=0x7f070000;

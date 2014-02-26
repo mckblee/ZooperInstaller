@@ -25,7 +25,7 @@
     
 
 
-
+<!-- The imageview below is the large preview image. -->
     <ImageView
         android:id="@+id/wallpaper"
         android:contentDescription="@string/blank"
@@ -35,6 +35,7 @@
 		android:layout_marginBottom="70dp"
         android:layout_centerHorizontal="true" />
 
+<!-- Small swipey thumbnails -->
     <Gallery
         android:id="@+id/gallery"
         android:layout_width="match_parent"
@@ -42,21 +43,17 @@
         android:layout_above="@+id/footerwall"
         android:layout_centerHorizontal="true"
         android:background="@color/transparent" />
-    
+
+<!-- This Button/RelativeLayout below will eventually be replaced by an actionbar button. -->
     <RelativeLayout
         android:id="@+id/footerwall" 
     	android:layout_width="match_parent"
     	android:layout_height="wrap_content"
     	android:layout_alignParentBottom="true"
     	android:background="@color/holo_white"
-    	android:paddingTop="@dimen/about_top_desc_margin"
-        android:paddingBottom="@dimen/list_padding"
->
-   
-
-
-        
-	<Button 
+    	android:paddingTop="@dimen/top_bottom_margin"
+        android:paddingBottom="@dimen/bottom_margin">
+   	<Button 
 	    android:textColor="@color/black"
 	    android:textSize="@dimen/list_desc_text"
 	    android:id="@+id/set"
@@ -64,8 +61,8 @@
 	    android:layout_width="match_parent" 
 	    android:layout_marginLeft="@dimen/left_right_margin"
 	    android:layout_marginRight="@dimen/left_right_margin"
-      	android:layout_marginTop="@dimen/about_top_desc_margin"
-        android:layout_marginBottom="@dimen/list_padding"
+      	android:layout_marginTop="@dimen/top_bottom_margin"
+        android:layout_marginBottom="@dimen/bottom_margin"
 	    android:layout_height="wrap_content" 
 	    android:text="@string/button_applywallpaper" 
 	    android:layout_alignParentLeft="true" 

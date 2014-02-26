@@ -16,6 +16,7 @@
 ** limitations under the License.
 -->
 
+<!-- This is the box below/around each wallpaper thumbnail. -->
 <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/wallpaper_image"
     android:contentDescription="@string/blank"

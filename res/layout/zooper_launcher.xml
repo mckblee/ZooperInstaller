@@ -1,53 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-
+<!-- Scrollview for entire page. -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         	android:id="@+id/scrollView1"
         	android:layout_width="match_parent"
         	android:layout_height="match_parent"
         	android:background="@color/holo_white"
-        	android:scrollbars="none">
-
-<LinearLayout 
-    android:id="@+id/layout1"
+        	android:scrollbars="none" >
+        	
+<!-- Literally only here because ScrollViews can only have one child. -->
+	<LinearLayout 
+    		android:id="@+id/layout1"
         	android:layout_width="match_parent"
         	android:layout_height="wrap_content"
-        	
-        	android:orientation="vertical"
->
+        	android:orientation="vertical" >
 
-    		    
+<!-- Header text. This has a "regular" font assigned to it in the java file. -->    		    
     		    <TextView
 	            		android:id="@+id/ZooperDescriptionTitle"
 	            		android:layout_width="match_parent"
 	            		android:layout_height="wrap_content"
         				android:layout_marginLeft="@dimen/left_right_margin"
         				android:layout_marginRight="@dimen/left_right_margin"
-	            		android:layout_marginTop="@dimen/about_top_desc_margin"
+	            		android:layout_marginTop="@dimen/top_bottom_margin"
 			            android:text="@string/descriptiontitle"
 			            android:textSize="@dimen/list_title_text"
 			            android:textColor="@color/holo_grey" />
+
+<!-- Description text. This has a "light" font assigned to it in the java file. -->    		     
     		     <TextView
 	            		android:id="@+id/ZooperDescription"
 	            		android:layout_width="match_parent"
 	            		android:layout_height="wrap_content"
         				android:layout_marginLeft="@dimen/left_right_margin"
         				android:layout_marginRight="@dimen/left_right_margin"
-	            		android:layout_marginTop="@dimen/about_top_desc_margin"
-	            		android:layout_marginBottom="@dimen/about_top_desc_margin"
+	            		android:layout_marginTop="@dimen/top_bottom_margin"
+	            		android:layout_marginBottom="@dimen/top_bottom_margin"
 			            android:text="@string/description"
 			            android:textSize="@dimen/list_desc_text"
 			            android:textColor="@color/holo_grey" />
 
+<!-- This button actually installs the Zooper Widget. All its goodies are defined in the java file. -->
     		    <Button 	
     		    		android:id="@+id/buttonInstallWidget"         	 
 	        			android:layout_width="match_parent"
 	            		android:layout_height="wrap_content"
         				android:layout_marginLeft="@dimen/left_right_margin"
         				android:layout_marginRight="@dimen/left_right_margin"
-	            		android:layout_marginTop="@dimen/list_padding"
-	            		android:layout_marginBottom="@dimen/list_padding"
+	            		android:layout_marginTop="@dimen/bottom_margin"
+	            		android:layout_marginBottom="@dimen/bottom_margin"
 	            		android:scaleType="fitXY"
 	        			android:textSize="@dimen/list_desc_text"
 	            		android:textColor="@color/holo_grey"
@@ -55,14 +57,15 @@
      					android:background="@drawable/buttondraw">
  				</Button>
  				
+<!-- Calls the Wallpaper Chooser activity... That will probably be put in the NavDrawer instead. -->				
     		    <Button 	
     		    		android:id="@+id/buttonWallpaperChooser"         	 
 	        			android:layout_width="match_parent"
 	            		android:layout_height="wrap_content"
         				android:layout_marginLeft="@dimen/left_right_margin"
         				android:layout_marginRight="@dimen/left_right_margin"
-	            		android:layout_marginTop="@dimen/about_top_desc_margin"
-	            		android:layout_marginBottom="@dimen/list_padding"
+	            		android:layout_marginTop="@dimen/top_bottom_margin"
+	            		android:layout_marginBottom="@dimen/bottom_margin"
 	            		android:scaleType="fitXY"
 	        			android:textSize="@dimen/list_desc_text"
 	            		android:textColor="@color/holo_grey"
@@ -70,28 +73,29 @@
      					android:background="@drawable/buttondraw">
  				</Button>
     		    
-    		    
+<!-- Included to protect the dev, the disclaimer explains unknown sources and uninstalling. -->    		    
  				<TextView
 	            		android:id="@+id/discalimer"
 	            		android:layout_width="match_parent"
 	            		android:layout_height="wrap_content"
         				android:layout_marginLeft="@dimen/left_right_margin"
         				android:layout_marginRight="@dimen/left_right_margin"
-	            		android:layout_marginTop="@dimen/about_top_desc_margin"
-	            		android:layout_marginBottom="@dimen/list_padding"
+	            		android:layout_marginTop="@dimen/top_bottom_margin"
+	            		android:layout_marginBottom="@dimen/bottom_margin"
 			            android:text="@string/disclaimer"
 			            android:textSize="@dimen/list_disclaimer"
 			            android:textColor="@color/holo_red" />
 
- 					
+<!-- This is kind of cheating, addind extra space at the bottom so that the user can scroll a decent
+amount and it also keeps the layout from staying behind the navbar when it is translucent. -->	
             		<TextView
 	            		android:id="@+id/blank1"
 	            		android:layout_width="match_parent"
 	            		android:layout_height="wrap_content"
         				android:layout_marginLeft="@dimen/left_right_margin"
         				android:layout_marginRight="@dimen/left_right_margin"
-	            		android:layout_marginTop="@dimen/about_top_desc_margin"
-	            		android:layout_marginBottom="@dimen/list_padding"
+	            		android:layout_marginTop="@dimen/top_bottom_margin"
+	            		android:layout_marginBottom="@dimen/bottom_margin"
 			            android:text="@string/blank"
 			            android:textSize="2sp"
 			            android:textColor="@color/white" 

@@ -1,5 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
+<!-- ActiionBar Overflow menu. -->
     <item
         android:id="@+id/action_rate"
         android:orderInCategory="200"

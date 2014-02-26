@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
+<!-- This is the background image that scrolls slower than the page content. -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	    android:id="@+id/BannerImage"
 	    android:layout_width="match_parent"

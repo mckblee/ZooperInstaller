@@ -5,17 +5,20 @@
     android:versionCode="1"
     android:versionName="1" >
 
+<!-- Limits installer to android 4.0 and up. If we want the template to work for lower,
+then we'll have to include the ActionBarSherlock library as well. -->
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
-
+    
+<!-- "icon" is the launcher icon, "iconlogo" is the ActionBar logo. "app_title" is...well...you know. -->
     <application
         android:allowBackup="false"
         android:icon="@drawable/icon"
         android:logo="@drawable/iconlogo"
-        android:label="@string/app_title" >
+        android:label="@string/app_title" > 
         
-<!-- Main Activity that launches when you open the app from the drawer that I haven't renamed yet. -->
+<!-- Main Activity that launches when you open the app from the drawer. -->
         <activity
             android:name="com.mckenzie.Zooper.Installer.Zooper"
             android:label="@string/app_title" 
@@ -25,10 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-
-
-<!-- Wallpaper Chooser -->
+<!-- Wallpaper activity that is accessed from within app, or launcher's wallpaper options. -->
         <activity
             android:name="com.mckenzie.Zooper.Installer.Wallpaper"
             android:finishOnCloseSystemDialogs="true"
@@ -49,6 +49,7 @@
         
     </application>
 
+<!-- Allows application to set wallpapers and write to storage for installing the zooper apk -->    
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
