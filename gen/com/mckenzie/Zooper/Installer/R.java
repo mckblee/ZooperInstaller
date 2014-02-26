@@ -60,53 +60,45 @@ public final class R {
         public static final int button_pressed=0x7f020002;
         public static final int buttondraw=0x7f020003;
         public static final int card_bg=0x7f020004;
-        public static final int fab__gradient=0x7f020005;
-        public static final int fab__gradient_light=0x7f020006;
-        public static final int gallery_item_background=0x7f020007;
-        public static final int grid_focused=0x7f020008;
-        public static final int grid_pressed=0x7f020009;
-        public static final int grid_selected=0x7f02000a;
-        public static final int grid_selector=0x7f02000b;
-        public static final int ic_overflow=0x7f02000c;
-        public static final int ic_overflow_pressed=0x7f02000d;
-        public static final int icon=0x7f02000e;
-        public static final int iconlogo=0x7f02000f;
-        public static final int iconoverflow=0x7f020010;
-        public static final int overflowdraw=0x7f020011;
-        public static final int square_over=0x7f020012;
-        public static final int wall_10=0x7f020013;
-        public static final int wall_10_small=0x7f020014;
-        public static final int wall_11=0x7f020015;
-        public static final int wall_11_small=0x7f020016;
-        public static final int wall_two=0x7f020017;
+        public static final int gallery_item_background=0x7f020005;
+        public static final int grid_focused=0x7f020006;
+        public static final int grid_pressed=0x7f020007;
+        public static final int grid_selected=0x7f020008;
+        public static final int grid_selector=0x7f020009;
+        public static final int ic_overflow=0x7f02000a;
+        public static final int ic_overflow_pressed=0x7f02000b;
+        public static final int icon=0x7f02000c;
+        public static final int iconlogo=0x7f02000d;
+        public static final int iconoverflow=0x7f02000e;
+        public static final int overflowdraw=0x7f02000f;
+        public static final int square_over=0x7f020010;
+        public static final int wall_10=0x7f020011;
+        public static final int wall_10_small=0x7f020012;
+        public static final int wall_11=0x7f020013;
+        public static final int wall_11_small=0x7f020014;
+        public static final int wall_two=0x7f020015;
         /**  This is the icon that will be shown in the plugin list, by default the app one is used 
          */
-        public static final int zooper_pack_icon=0x7f020018;
+        public static final int zooper_pack_icon=0x7f020016;
     }
     public static final class id {
-        public static final int BannerImage=0x7f0b0013;
-        public static final int YourBannerImage=0x7f0b0014;
-        public static final int ZooperDescription=0x7f0b000e;
-        public static final int ZooperDescriptionTitle=0x7f0b000d;
-        public static final int action_rate=0x7f0b0015;
-        public static final int action_share=0x7f0b0016;
-        public static final int blank1=0x7f0b0012;
-        public static final int buttonInstallWidget=0x7f0b000f;
-        public static final int buttonWallpaperChooser=0x7f0b0010;
-        public static final int discalimer=0x7f0b0011;
-        public static final int fab__container=0x7f0b0004;
-        public static final int fab__content_top_margin=0x7f0b0005;
-        public static final int fab__gradient=0x7f0b0001;
-        public static final int fab__header_container=0x7f0b0000;
-        public static final int fab__listview_background=0x7f0b0002;
-        public static final int fab__scroll_view=0x7f0b0003;
-        public static final int footerwall=0x7f0b0008;
-        public static final int gallery=0x7f0b0007;
-        public static final int layout1=0x7f0b000c;
-        public static final int scrollView1=0x7f0b000b;
-        public static final int set=0x7f0b0009;
-        public static final int wallpaper=0x7f0b0006;
-        public static final int wallpaper_image=0x7f0b000a;
+        public static final int BannerImage=0x7f0b000d;
+        public static final int YourBannerImage=0x7f0b000e;
+        public static final int ZooperDescription=0x7f0b0008;
+        public static final int ZooperDescriptionTitle=0x7f0b0007;
+        public static final int action_rate=0x7f0b000f;
+        public static final int action_share=0x7f0b0010;
+        public static final int blank1=0x7f0b000c;
+        public static final int buttonInstallWidget=0x7f0b0009;
+        public static final int buttonWallpaperChooser=0x7f0b000a;
+        public static final int discalimer=0x7f0b000b;
+        public static final int footerwall=0x7f0b0002;
+        public static final int gallery=0x7f0b0001;
+        public static final int layout1=0x7f0b0006;
+        public static final int scrollView1=0x7f0b0005;
+        public static final int set=0x7f0b0003;
+        public static final int wallpaper=0x7f0b0000;
+        public static final int wallpaper_image=0x7f0b0004;
     }
     public static final class integer {
         /**  If set to 0 user will not be allowed to save this template 
@@ -114,14 +106,10 @@ public final class R {
         public static final int zooper_pack_allowsave=0x7f090000;
     }
     public static final class layout {
-        public static final int fab__header_container=0x7f030000;
-        public static final int fab__listview_container=0x7f030001;
-        public static final int fab__scrollview_container=0x7f030002;
-        public static final int fab__webview_container=0x7f030003;
-        public static final int wallpaper_chooser=0x7f030004;
-        public static final int wallpaper_item=0x7f030005;
-        public static final int zooper_launcher=0x7f030006;
-        public static final int zooper_launcher_header=0x7f030007;
+        public static final int wallpaper_chooser=0x7f030000;
+        public static final int wallpaper_item=0x7f030001;
+        public static final int zooper_launcher=0x7f030002;
+        public static final int zooper_launcher_header=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
