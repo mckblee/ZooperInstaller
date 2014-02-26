@@ -48,32 +48,33 @@ public final class R {
     }
     public static final class drawable {
         public static final int ab_solid_actionbar=0x7f020000;
-        public static final int button_normal=0x7f020001;
-        public static final int button_pressed=0x7f020002;
-        public static final int buttondraw=0x7f020003;
-        public static final int card_bg=0x7f020004;
-        public static final int fab__gradient=0x7f020005;
-        public static final int fab__gradient_light=0x7f020006;
-        public static final int gallery_item_background=0x7f020007;
-        public static final int grid_focused=0x7f020008;
-        public static final int grid_pressed=0x7f020009;
-        public static final int grid_selected=0x7f02000a;
-        public static final int grid_selector=0x7f02000b;
-        public static final int ic_overflow=0x7f02000c;
-        public static final int ic_overflow_pressed=0x7f02000d;
-        public static final int icon=0x7f02000e;
-        public static final int iconlogo=0x7f02000f;
-        public static final int iconoverflow=0x7f020010;
-        public static final int overflowdraw=0x7f020011;
-        public static final int square_over=0x7f020012;
-        public static final int wall_10=0x7f020013;
-        public static final int wall_10_small=0x7f020014;
-        public static final int wall_11=0x7f020015;
-        public static final int wall_11_small=0x7f020016;
-        public static final int wall_two=0x7f020017;
+        public static final int ab_solid_actionbar_transparent=0x7f020001;
+        public static final int button_normal=0x7f020002;
+        public static final int button_pressed=0x7f020003;
+        public static final int buttondraw=0x7f020004;
+        public static final int card_bg=0x7f020005;
+        public static final int fab__gradient=0x7f020006;
+        public static final int fab__gradient_light=0x7f020007;
+        public static final int gallery_item_background=0x7f020008;
+        public static final int grid_focused=0x7f020009;
+        public static final int grid_pressed=0x7f02000a;
+        public static final int grid_selected=0x7f02000b;
+        public static final int grid_selector=0x7f02000c;
+        public static final int ic_overflow=0x7f02000d;
+        public static final int ic_overflow_pressed=0x7f02000e;
+        public static final int icon=0x7f02000f;
+        public static final int iconlogo=0x7f020010;
+        public static final int iconoverflow=0x7f020011;
+        public static final int overflowdraw=0x7f020012;
+        public static final int square_over=0x7f020013;
+        public static final int wall_10=0x7f020014;
+        public static final int wall_10_small=0x7f020015;
+        public static final int wall_11=0x7f020016;
+        public static final int wall_11_small=0x7f020017;
+        public static final int wall_two=0x7f020018;
         /**  This is the icon that will be shown in the plugin list, by default the app one is used 
          */
-        public static final int zooper_pack_icon=0x7f020018;
+        public static final int zooper_pack_icon=0x7f020019;
     }
     public static final class id {
         public static final int BannerImage=0x7f0b0013;
@@ -119,6 +120,8 @@ public final class R {
         public static final int main=0x7f0a0000;
     }
     public static final class string {
+        /**  OverFlow buttons. 
+         */
         public static final int action_rate=0x7f060008;
         public static final int action_settings=0x7f060009;
         /**  Title for app that is shown in launchers. 
@@ -127,6 +130,8 @@ public final class R {
         public static final int blank=0x7f06000a;
         public static final int button_applywallpaper=0x7f060006;
         public static final int button_install=0x7f060007;
+        /**  Buttons. 
+         */
         public static final int button_wallpapers=0x7f060005;
         /**  Page descriptions. 
          */
@@ -151,7 +156,11 @@ public final class R {
         public static final int AppTheme_Light_TranslucentActionBar=0x7f07000a;
         public static final int AppTheme_TranslucentActionBar=0x7f070009;
         public static final int MyActionBar=0x7f070001;
+        /**  Sets my custom white overflow button to use Holo.Light. 
+         */
         public static final int OverFlow=0x7f070002;
+        /**  FadingActionBar Stuff 
+         */
         public static final int Widget=0x7f070003;
         public static final int Widget_ActionBar=0x7f070004;
         public static final int Widget_ActionBar_Transparent=0x7f070007;
