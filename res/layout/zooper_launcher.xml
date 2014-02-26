@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        	android:id="@+id/scrollView1"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:background="@color/holo_white"
+        	android:scrollbars="none">
+
+<LinearLayout 
+    android:id="@+id/layout1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	
+        	android:orientation="vertical"
+>
+
+    		    
+    		    <TextView
+	            		android:id="@+id/ZooperDescriptionTitle"
+	            		android:layout_width="match_parent"
+	            		android:layout_height="wrap_content"
+        				android:layout_marginLeft="@dimen/left_right_margin"
+        				android:layout_marginRight="@dimen/left_right_margin"
+	            		android:layout_marginTop="@dimen/about_top_desc_margin"
+			            android:text="@string/descriptiontitle"
+			            android:textSize="@dimen/list_title_text"
+			            android:textColor="@color/holo_grey" />
+    		     <TextView
+	            		android:id="@+id/ZooperDescription"
+	            		android:layout_width="match_parent"
+	            		android:layout_height="wrap_content"
+        				android:layout_marginLeft="@dimen/left_right_margin"
+        				android:layout_marginRight="@dimen/left_right_margin"
+	            		android:layout_marginTop="@dimen/about_top_desc_margin"
+	            		android:layout_marginBottom="@dimen/about_top_desc_margin"
+			            android:text="@string/description"
+			            android:textSize="@dimen/list_desc_text"
+			            android:textColor="@color/holo_grey" />
+
+    		    <Button 	
+    		    		android:id="@+id/buttonInstallWidget"         	 
+	        			android:layout_width="match_parent"
+	            		android:layout_height="wrap_content"
+        				android:layout_marginLeft="@dimen/left_right_margin"
+        				android:layout_marginRight="@dimen/left_right_margin"
+	            		android:layout_marginTop="@dimen/list_padding"
+	            		android:layout_marginBottom="@dimen/list_padding"
+	            		android:scaleType="fitXY"
+	        			android:textSize="@dimen/list_desc_text"
+	            		android:textColor="@color/holo_grey"
+	        			android:text="@string/button_install"
+     					android:background="@drawable/buttondraw">
+ 				</Button>
+ 				
+    		    <Button 	
+    		    		android:id="@+id/buttonWallpaperChooser"         	 
+	        			android:layout_width="match_parent"
+	            		android:layout_height="wrap_content"
+        				android:layout_marginLeft="@dimen/left_right_margin"
+        				android:layout_marginRight="@dimen/left_right_margin"
+	            		android:layout_marginTop="@dimen/about_top_desc_margin"
+	            		android:layout_marginBottom="@dimen/list_padding"
+	            		android:scaleType="fitXY"
+	        			android:textSize="@dimen/list_desc_text"
+	            		android:textColor="@color/holo_grey"
+	        			android:text="@string/button_wallpapers"
+     					android:background="@drawable/buttondraw">
+ 				</Button>
+    		    
+    		    
+ 				<TextView
+	            		android:id="@+id/discalimer"
+	            		android:layout_width="match_parent"
+	            		android:layout_height="wrap_content"
+        				android:layout_marginLeft="@dimen/left_right_margin"
+        				android:layout_marginRight="@dimen/left_right_margin"
+	            		android:layout_marginTop="@dimen/about_top_desc_margin"
+	            		android:layout_marginBottom="@dimen/list_padding"
+			            android:text="@string/disclaimer"
+			            android:textSize="@dimen/list_disclaimer"
+			            android:textColor="@color/holo_red" />
+
+ 					
+            		<TextView
+	            		android:id="@+id/blank1"
+	            		android:layout_width="match_parent"
+	            		android:layout_height="wrap_content"
+        				android:layout_marginLeft="@dimen/left_right_margin"
+        				android:layout_marginRight="@dimen/left_right_margin"
+	            		android:layout_marginTop="@dimen/about_top_desc_margin"
+	            		android:layout_marginBottom="@dimen/list_padding"
+			            android:text="@string/blank"
+			            android:textSize="2sp"
+			            android:textColor="@color/white" 
+			            android:fitsSystemWindows = "true"/>
+</LinearLayout>
+</ScrollView>
+

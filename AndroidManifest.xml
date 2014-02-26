@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mckenzie.Zooper.Installer"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:logo="@drawable/iconlogo"
+        android:label="@string/app_title" >
+        
+<!-- Main Activity that launches when you open the app from the drawer that I haven't renamed yet. -->
+        <activity
+            android:name="com.mckenzie.Zooper.Installer.Zooper"
+            android:label="@string/app_title" 
+            android:theme="@style/AppTheme.TranslucentActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+
+
+<!-- Wallpaper Chooser -->
+        <activity
+            android:name="com.mckenzie.Zooper.Installer.Wallpaper"
+            android:finishOnCloseSystemDialogs="true"
+            android:icon="@drawable/icon"
+            android:label="@string/wallpapers"
+            android:logo="@drawable/iconlogo"
+            android:theme="@style/AppTheme"
+>
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+    </application>
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+</manifest>

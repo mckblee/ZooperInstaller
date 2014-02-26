@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Provide a list of wallpaers -->
+    <string-array name="wallpapers" translatable="false">
+
+		<item>wall_10</item>
+		<item>wall_11</item>
+		
+    </string-array>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="homescreen_icon_text_color">#FFFFFFFF</color>
+    <color name="outline_color">#FF458cf5</color>
+
+    <color name="folder_title_color">#FF458cf5</color>
+    <color name="folder_item_text_color">#FFffffff</color>
+
+    <color name="shadow_large_color">#DD000000</color>
+    <color name="shadow_small_color">#CC000000</color>
+
+    <color name="drawer_background_color">#FF000000</color>
+    <color name="drawer_tab_text_color">#FFFFFFFF</color>
+    <color name="drawer_icon_text_color">#FFFFFFFF</color>
+    <color name="drawer_widget_size_color">#FF555555</color>
+
+    <color name="bubble_text_color">#FFFFFFFF</color>
+    <color name="bubble_ring_color">#FFFFFFFF</color>
+    <color name="bubble_shadow_color">#FF000000</color>
+    <color name="bubble_background_color">#FFAA0000</color>
+    <color name="bubble_shader_color">#FFFF6F60</color>
+    
+    <color name="holo_white50">#59f3f3f3</color>
+    <color name="holo_white">#fff3f3f3</color>
+    <color name="holo_grey">#80313131</color>
+    <color name="holo_black">#FF252525</color>
+    <color name="holo_red">#ffff0000</color>
+    <color name="black">#FF000000</color>
+    <color name="black_50">#59000000</color>
+    <color name="white">#ffffffff</color>
+	<color name="holo_violet">#FF458cf5</color>
+	<color name="transparent">#00000000</color>
+
+
+
+
+</resources>

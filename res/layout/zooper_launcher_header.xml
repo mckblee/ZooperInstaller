@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/BannerImage"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/banner_height"
+	    android:orientation="vertical" >
+
+	    <ImageView
+	        android:id="@+id/YourBannerImage"
+	        android:contentDescription="@string/blank"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/banner_height"
+	        android:scaleType="centerCrop"
+	        android:layout_gravity="center"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:src="@drawable/wall_two" />
+ 
+    </RelativeLayout>
+   
+    		   

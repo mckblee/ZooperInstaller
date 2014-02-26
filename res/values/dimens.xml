@@ -1,0 +1,18 @@
+<resources>
+
+    <dimen name="list_padding">3dp</dimen>
+	<dimen name="left_right_margin">25dp</dimen>
+
+	<dimen name="header_text">30sp</dimen>
+	<dimen name="subheader_text">25sp</dimen>
+	
+    <dimen name="about_top_title_margin">24dp</dimen>
+    <dimen name="about_top_desc_margin">24dp</dimen>
+
+    <dimen name="list_title_text">22sp</dimen>
+    <dimen name="list_desc_text">20sp</dimen>
+    <dimen name="list_disclaimer">10sp</dimen>
+
+    <dimen name="banner_height">200dp</dimen>
+
+</resources>
