@@ -37,7 +37,7 @@ import android.widget.Toast;
 public class Zooper extends Activity {
 
 	// change this to your apk skin name
-	private static final String UCCW_TEST_SKIN_APK = "faint.apk";
+	private static final String ZOOPER_SKIN_APK = "faint.apk";
 
 
 	
@@ -200,7 +200,7 @@ public class Zooper extends Activity {
 		OutputStream out = null;
 
 		try {
-			in = assetManager.open(UCCW_TEST_SKIN_APK);
+			in = assetManager.open(ZOOPER_SKIN_APK);
 			try {
 				out = new FileOutputStream(pathToSkin);
 			} catch (FileNotFoundException e) {
