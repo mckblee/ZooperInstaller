@@ -2,24 +2,23 @@
 <resources>
 
 <!-- Title for app that is shown in launchers. -->
-    <string name="app_title">Zooper Widget Template </string>
+    <string name="app_title">BOXED </string>
 
 <!-- Title for wallpaper activity shown in launchers. -->    
 	<string name="wallpapers">Zooper Widget Wallpapers</string>
    
 <!-- Page titles. -->    
-	<string name="descriptiontitle">MY ZOOPER SKIN</string>
+	<string name="descriptiontitle">BOXED WIDGETS</string>
 	
 <!-- Page descriptions. -->
-	<string name="description">This page will install My Zooper Skin on your device.\n\nThe latest version of Zooper Widget Pro should be installed before using.\n\nSelect \"Install  Widget(s)\" below to begin installing the apk. My Zooper Skin will then be available through Zooper.</string>
+	<string name="description">Hit \"Install\" to install BOXED Zooper Skins. You will need to need to have the latest version of Zooper Widget Pro installed prior to use.</string>
 	
 <!-- Zooper disclaimer. -->	
-	<string name="disclaimer">*You will have to allow \"Unknown Sources\" to install the .apk, if you do not know how to do this, or this makes you uneasy, please pass until Zooper has fixed compatibility with Paid Apps. I take no responsibility for your device or info once Unknown Sources is enabled. To uninstall this widget completely you must uninstall <b>both</b> .apks.</string>
+	<string name="disclaimer">Don\'t have Zooper Widget Pro? Hit \"Get\" to download it from Google Play.</string>
 
 <!-- Buttons. -->
-	<string name="button_wallpapers">Wallpapers</string>
-	<string name="button_applywallpaper">Apply</string>
-	<string name="button_install">Install Widget(s)*</string>
+	<string name="button_install">Install</string>
+	<string name="button_get">Get</string>
 	
 <!-- OverFlow buttons. -->
 	<string name="action_rate">Rate</string>

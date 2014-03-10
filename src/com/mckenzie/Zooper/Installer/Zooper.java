@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import com.manuelpeinado.fadingactionbar.FadingActionBarHelper;
 import com.mckenzie.Zooper.Installer.R;
 
 
@@ -49,26 +48,14 @@ public class Zooper extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-	
-	// Removes ActionBar title at launch. Delete this line to get it back.
-		this.setTitle(getResources().getString(R.string.blank));
-		
-	// FadingActionBar calls the header and main layouts, and sets the AB background.	
-        FadingActionBarHelper helper = new FadingActionBarHelper()
-        .actionBarBackground(R.drawable.ab_solid_actionbar)
-        .headerLayout(R.layout.zooper_launcher_header)
-        .contentLayout(R.layout.zooper_launcher);
-        setContentView(helper.createView(this));
-        helper.initActionBar(this);
+	    getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
+	    getActionBar().hide();
+        setContentView(R.layout.zooper_launcher);
     
 	context = this;
 
 	//Sets the fonts for the activity. There's gotta be a better way to do this...
-	    TextView tv3=(TextView)findViewById(R.id.ZooperDescription); 
-	    Typeface face2=Typeface.createFromAsset(getAssets(), "themefontlight.ttf");
-	    tv3.setTypeface(face2);
-	    TextView tv4=(TextView)findViewById(R.id.ZooperDescriptionTitle); 
-	    tv3.setTypeface(face2);
+
 	    
 	// Buttons!     
 		findViewById(R.id.buttonInstallWidget).setOnClickListener(
@@ -81,59 +68,20 @@ public class Zooper extends Activity {
 					}
 
 				});
-		
-		
-		
-		findViewById(R.id.buttonWallpaperChooser).setOnClickListener(
+		findViewById(R.id.buttonGetZooper).setOnClickListener(
 				new OnClickListener() {
 
 					@Override
 					public void onClick(View v) {
-						// Opens the wallpaper activity.
-					    Intent intent = new Intent(com.mckenzie.Zooper.Installer.Zooper.this, com.mckenzie.Zooper.Installer.Wallpaper.class);
-					    startActivity(intent);
+				   		 Uri uri = Uri.parse("market://details?id=org.zooper.zwpro");
+				   		 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+				   		 startActivity(intent);
+				          
 					}
 
 				});
 
 	}
-	
-	@Override
-	// This is the ActionBar Menu
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu) ;
-		return true;
-	}
-	@SuppressWarnings("unchecked")
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-	    // Handle item selection
-	    switch (item.getItemId()){
-	    
-        case R.id.action_share:
-        	Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND); 
-            sharingIntent.setType("text/plain");
-            // Don't forget to set this to YOUR app's info.
-            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "My Zooper Widget");
-            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "http://www.URL.com");
-            startActivity(Intent.createChooser(sharingIntent, "Share Widget..."));
-            Toast.makeText(this, "You are totally awesome. Thank you!", Toast.LENGTH_SHORT).show();
-            return true;
-            
-        case R.id.action_rate:
-        	// Again, set to YOUR app's market info
-   		 	Uri uri = Uri.parse("market://URL.com");
-   		 	Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-   		 	startActivity(intent);
-            return true;
-	            
-            // Default stuff.
-	        default:
-	            return super.onOptionsItemSelected(item);
-	    }
-	}
-	
 	
 	
 	

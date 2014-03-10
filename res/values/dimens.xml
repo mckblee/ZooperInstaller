@@ -3,17 +3,18 @@
 
 
 <!-- Margin for text/layouts from left and right of screen. -->	
-	<dimen name="left_right_margin">25dp</dimen>
+	<dimen name="left_right_margin">18dp</dimen>
 
 <!-- Top and Bottom margins for text/layouts. -->
     <dimen name="top_bottom_margin">24dp</dimen>
-    <dimen name="bottom_margin">3dp</dimen>
-    <dimen name="button_top_bottom_margin">12dp</dimen>
+    <dimen name="descrip_margin">44dp</dimen>
+    <dimen name="button_top_bottom_margin">2dp</dimen>
     
 <!-- Text Sizes -->
-    <dimen name="list_title_text">22sp</dimen>
+    <dimen name="list_title_text">38sp</dimen>
     <dimen name="list_desc_text">20sp</dimen>
-    <dimen name="list_disclaimer">10sp</dimen>
+    <dimen name="list_button_text">30sp</dimen>
+
 
 <!-- Height of the image banner -->
     <dimen name="banner_height">200dp</dimen>

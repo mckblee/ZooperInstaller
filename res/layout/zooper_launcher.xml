@@ -1,19 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<!-- Scrollview for entire page. -->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        	android:id="@+id/scrollView1"
-        	android:layout_width="match_parent"
-        	android:layout_height="match_parent"
-        	android:background="@color/holo_white"
-        	android:scrollbars="none" >
+
         	
 <!-- Literally only here because ScrollViews can only have one child. -->
-	<LinearLayout 
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     		android:id="@+id/layout1"
+    		android:background="@color/holo_white"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+ >
+ 
+<!-- This is the footer, that has all the buttons. I cheated to get the buttons side-by-side. -->	    
+ <RelativeLayout
+        android:id="@+id/footerButtons" 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="@dimen/button_top_bottom_margin"
+	    android:layout_marginBottom="@dimen/button_top_bottom_margin"
+    	android:layout_alignParentBottom="true"
+    	android:background="@color/transparent"
+        android:paddingBottom="3dp"
+>
+   
+        <TextView 
+        android:id="@+id/middle" 
+        android:background="@color/transparent" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/blank" 
+		android:layout_centerVertical="true" 
+        android:layout_centerHorizontal="true" />
+        
+<!-- This button actually installs the Zooper Widget. All its goodies are defined in the java file. -->
+    		    <Button 	
+    		    		android:id="@+id/buttonGetZooper"         	 
+	        			android:layout_width="match_parent"
+	            		android:layout_height="wrap_content"
+        				android:layout_marginLeft="@dimen/left_right_margin"
+        				android:layout_marginRight="@dimen/left_right_margin"
+	            		android:layout_marginTop="@dimen/top_bottom_margin"
+	            		android:layout_marginBottom="@dimen/top_bottom_margin"
+	            		android:layout_toLeftOf="@id/middle" 
+        				android:layout_alignParentLeft="true" 
+        				android:layout_centerVertical="true" 
+	            		android:scaleType="fitXY"
+	            		android:fontFamily="sans-serif-light"
+	        			android:textSize="@dimen/list_button_text"
+	            		android:textColor="@color/holo_grey"
+	        			android:text="@string/button_get"
+     					android:background="@drawable/buttondraw">
+ 				</Button>
+ 				
+    
+<!-- This button actually installs the Zooper Widget. All its goodies are defined in the java file. -->
+    		    <Button 	
+    		    		android:id="@+id/buttonInstallWidget"         	 
+	        			android:layout_width="match_parent"
+	            		android:layout_height="wrap_content"
+        				android:layout_marginLeft="@dimen/left_right_margin"
+        				android:layout_marginRight="@dimen/left_right_margin"
+	            		android:layout_marginTop="@dimen/top_bottom_margin"
+	            		android:layout_marginBottom="@dimen/top_bottom_margin"
+	            		android:layout_toRightOf="@id/middle" 
+        				android:layout_alignParentRight="true" 
+        				android:layout_centerVertical="true" 
+	            		android:scaleType="fitXY"
+	            		android:fontFamily="sans-serif-light"
+	        			android:textSize="@dimen/list_button_text"
+	            		android:textColor="@color/holo_grey"
+	        			android:text="@string/button_install"
+     					android:background="@drawable/buttondraw">
+ 				</Button>
+ 				
+    
+        </RelativeLayout>
+        
+ <!-- This is all the main content. -->
+ <ScrollView 
+            android:layout_above="@id/footerButtons"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentTop="true">
+       
+       <LinearLayout 
+    		android:id="@+id/layout2"
         	android:layout_width="match_parent"
         	android:layout_height="wrap_content"
+        	android:layout_marginBottom="@dimen/descrip_margin"
         	android:orientation="vertical" >
 
 <!-- Header text. This has a "regular" font assigned to it in the java file. -->    		    
@@ -24,6 +98,8 @@
         				android:layout_marginLeft="@dimen/left_right_margin"
         				android:layout_marginRight="@dimen/left_right_margin"
 	            		android:layout_marginTop="@dimen/top_bottom_margin"
+	            		android:layout_marginBottom="@dimen/descrip_margin"
+	            		android:fontFamily="sans-serif-light"
 			            android:text="@string/descriptiontitle"
 			            android:textSize="@dimen/list_title_text"
 			            android:textColor="@color/holo_grey" />
@@ -37,56 +113,33 @@
         				android:layout_marginRight="@dimen/left_right_margin"
 	            		android:layout_marginTop="@dimen/top_bottom_margin"
 	            		android:layout_marginBottom="@dimen/top_bottom_margin"
+	            		android:fontFamily="sans-serif-light"
 			            android:text="@string/description"
 			            android:textSize="@dimen/list_desc_text"
 			            android:textColor="@color/holo_grey" />
-
-<!-- This button actually installs the Zooper Widget. All its goodies are defined in the java file. -->
-    		    <Button 	
-    		    		android:id="@+id/buttonInstallWidget"         	 
-	        			android:layout_width="match_parent"
-	            		android:layout_height="wrap_content"
-        				android:layout_marginLeft="@dimen/left_right_margin"
-        				android:layout_marginRight="@dimen/left_right_margin"
-	            		android:layout_marginTop="@dimen/bottom_margin"
-	            		android:layout_marginBottom="@dimen/bottom_margin"
-	            		android:scaleType="fitXY"
-	        			android:textSize="@dimen/list_desc_text"
-	            		android:textColor="@color/holo_grey"
-	        			android:text="@string/button_install"
-     					android:background="@drawable/buttondraw">
- 				</Button>
- 				
-<!-- Calls the Wallpaper Chooser activity... That will probably be put in the NavDrawer instead. -->				
-    		    <Button 	
-    		    		android:id="@+id/buttonWallpaperChooser"         	 
-	        			android:layout_width="match_parent"
-	            		android:layout_height="wrap_content"
-        				android:layout_marginLeft="@dimen/left_right_margin"
-        				android:layout_marginRight="@dimen/left_right_margin"
-	            		android:layout_marginTop="@dimen/top_bottom_margin"
-	            		android:layout_marginBottom="@dimen/bottom_margin"
-	            		android:scaleType="fitXY"
-	        			android:textSize="@dimen/list_desc_text"
-	            		android:textColor="@color/holo_grey"
-	        			android:text="@string/button_wallpapers"
-     					android:background="@drawable/buttondraw">
- 				</Button>
-    		    
+    		     
 <!-- Included to protect the dev, the disclaimer explains unknown sources and uninstalling. -->    		    
  				<TextView
-	            		android:id="@+id/discalimer"
+	            		android:id="@+id/DisclaimerText"
 	            		android:layout_width="match_parent"
 	            		android:layout_height="wrap_content"
         				android:layout_marginLeft="@dimen/left_right_margin"
         				android:layout_marginRight="@dimen/left_right_margin"
 	            		android:layout_marginTop="@dimen/top_bottom_margin"
 	            		android:layout_marginBottom="@dimen/top_bottom_margin"
+	            		android:fontFamily="sans-serif-light"
 			            android:text="@string/disclaimer"
-			            android:textSize="@dimen/list_disclaimer"
+			            android:textSize="@dimen/list_desc_text"
 			            android:textColor="@color/holo_red" 
 			            />
-
 </LinearLayout>
 </ScrollView>
+
+
+
+    		    
+
+
+</RelativeLayout>
+
 
