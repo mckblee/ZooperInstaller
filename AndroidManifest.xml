@@ -22,7 +22,7 @@ then we'll have to include the ActionBarSherlock library as well. -->
         <activity
             android:name="com.mckenzie.Zooper.Installer.Zooper"
             android:label="@string/app_title" 
-            android:theme="@style/AppTheme.TranslucentActionBar">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
